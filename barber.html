@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+			integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<!-- <link rel="stylesheet" href="./css/bg-slider.css" /> -->
+		<link rel="stylesheet" href="./css/barber.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="container header__box">
+				<a href="" class="logo">
+					<svg class="logo__icon" width="68" height="56">
+						<use href="./img/icons.svg#icon-Logo"></use>
+					</svg>
+				</a>
+
+				<nav class="header__nav">
+					<ul class="header__list">
+						<li><a href="#about" class="header__item">About</a></li>
+						<li><a href="#services" class="header__item">Services and prices</a></li>
+						<li><a href="#barbers" class="header__item">Barbers</a></li>
+						<li><a href="#contacts" class="header__item">Contacts</a></li>
+					</ul>
+				</nav>
+				<div class="header__link">
+					<a href="tel:+380441111111" class="header__tel">+38 044 111 11 11</a>
+					<button type="button" class="btn js-open-modal header-btn" data-modal="1">Online-booking</button>
+				</div>
+
+				<!-- <button class="menu-button js-open-modal" type="button" aria-expanded="false" aria-controls="menu-conteiner" data-modal="2">
+					<svg class="menu" width="40px" height="40px" aria-label="Перемикач мобільного меню">
+						<use class="icon-menu" href="./img/icons.svg#icon-menu_40px-3"></use>
+					</svg>
+				</button> -->
+			</div>
+			<!-- Mобільного меню -->
+
+			<!-- <div class="menu-nav-mobail modal" data-modal="2">
+				<button class="menu-button-close js-modal-close" type="button">
+					<svg class="menu" width="40px" height="40px" aria-label="Перемикач мобільного меню">
+						<use class="icon-cross" href="./img/icons.svg#icon-close_40px-3"></use>
+					</svg>
+				</button>
+				<nav class="mob-menu__nav">
+					<ul class="mob-menu__list">
+						<li class="mob-menu__item"><a href="#about" class="mob-menu__link js-modal-close">About</a></li>
+						<li class="mob-menu__item"><a href="#services" class="mob-menu__link js-modal-close">Services and prices</a></li>
+						<li class="mob-menu__item"><a href="#barbers" class="mob-menu__link js-modal-close">Barbers</a></li>
+						<li class="mob-menu__item"><a href="#contacts" class="mob-menu__link js-modal-close">Contacts</a></li>
+					</ul>
+				</nav>
+				<div class="mob-connect">
+					<a href="tel:+380441111111" class="mob-menu__tel">+38 044 111 11 11</a>
+
+					<button type="button" class="mob-connect-btn btn js-open-modal" data-modal="1">Online-booking</button>
+				</div>
+				<ul class="mob-soc__list">
+					<li class="mob-soc__item">
+						<a href="" target="_blank" rel="noopener noreferrer nofollow" class="mob-soc__link">Instagram</a>
+					</li>
+					<li class="mob-soc__item">
+						<a href="" target="_blank" rel="noopener noreferrer nofollow" class="mob-soc__link">Youtube</a>
+					</li>
+				</ul>
+			</div> -->
+		</header>
+		<!-- Main -->
+		<main>
+			<!-- Hero -->
+			<section class="hero">
+				<div class="hero__container container">
+					<div class="hero__soc">
+						<ul class="hero__list">
+							<li class="hero__item">
+								<a href="" target="_blank" rel="noopener noreferrer nofollow" class="hero__link">Instagram</a>
+							</li>
+							<li class="hero__item">
+								<a href="" target="_blank" rel="noopener noreferrer nofollow" class="hero__link">Youtube</a>
+							</li>
+						</ul>
+					</div>
+					<div class="hero__wrapper">
+						<!-- Additional required wrapper -->
+						<div id="slider">
+							<div class="content bg-slider"></div>
+
+							<div class="content bg-slider"></div>
+							<div class="content bg-slider"></div>
+						</div>
+						<!-- <div class="swiper-pagination"></div>
+						<div class="button-prev">Back</div>
+						<div class="button-next">Forward</div> -->
+
+						<div class="hero__content">
+							<p class="pre-title pre-title--grey">A hair salon for men in Kyiv</p>
+							<h1 class="hero__title">BarberShop</h1>
+							<p class="hero__after-title">We are experts in trendy men’s haircuts. We work quickly, carefully and with style.</p>
+						</div>
+					</div>
+					<div class="nav-wrapper">
+						<div class="nav-dots">
+							<div class="current"></div>
+							<div class=""></div>
+							<div class=""></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="about section" id="about">
+				<div class="about__container container">
+					<ul class="about__photo">
+						<li>
+							<picture>
+								<source
+									srcset="./img/img-about/about-desk-1.jpg 1x, ./img/img-about/about-desk-1@2x.jpg 2x"
+									type="image/jpg"
+									media="(min-width:1200px)"
+								/>
+								<source
+									srcset="./img/img-about/about-tab-1.jpg 1x, ./img/img-about/about-tab-1@2x.jpg 2x"
+									type="image/jpg"
+									media="(min-width:768px)"
+								/>
+								<img src="./img/img-about/about-tab-1.jpg" alt="Haircut" />
+							</picture>
+						</li>
+						<li>
+							<picture>
+								<source
+									srcset="./img/img-about/about-desk-2.jpg 1x, ./img/img-about/about-desk-2@2x.jpg 2x"
+									type="image/jpg"
+									media="(min-width:1200px)"
+								/>
+								<source
+									srcset="./img/img-about/about-tab-2.jpg 1x, ./img/img-about/about-tab-2@2x.jpg 2x"
+									type="image/jpg"
+									media="(min-width:768px)"
+								/>
+								<img src="./img/img-about/about-tab-2.jpg" alt="Haircut" />
+							</picture>
+						</li>
+					</ul>
+					<div class="contant about__contan">
+						<p class="pre-title pre-title--black">About</p>
+						<h2 class="contant__title">Best Barbershop in your city</h2>
+						<p class="contant__after-title">If you want to add more confidence to your image, you should definitely visit us.</p>
+						<p class="contant__text">
+							We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into the hands of our
+							master, you will never be the same again. We are a team that is always "on the same wave" with clients. Therefore, we are
+							always ready to improve everyone who comes to us!
+						</p>
+
+						<button type="button" class="btn btn--black js-open-modal" data-modal="1">Online-booking</button>
+
+						<!-- href="#form-online" -->
+					</div>
+				</div>
+			</section>
+		</main>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+			integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script src="./js/bg-slider.js"></script>
+	</body>
+</html>

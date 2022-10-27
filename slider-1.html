@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+			integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="./css/slider-1.css" />
+	</head>
+	<body>
+		<section class="hero">
+			<!-- <div class="hero__container container">
+					<div class="hero__soc">
+						<ul class="hero__list">
+							<li class="hero__item">
+								<a href="" target="_blank" rel="noopener noreferrer nofollow" class="hero__link">Instagram</a>
+							</li>
+							<li class="hero__item">
+								<a href="" target="_blank" rel="noopener noreferrer nofollow" class="hero__link">Youtube</a>
+							</li>
+						</ul>
+					</div> -->
+			<div class="slider">
+				<!-- <div class="swiper"> -->
+				<!-- Additional required wrapper -->
+				<!-- <div class="sim-slider-list"> -->
+				<div class="item">
+					<picture>
+						<source srcset="./img/slider-1/slide1mob.jpg 1x, ./img/slider-1/slide1mob@2x.jpg 2x" media="(max-width: 767px)" />
+						<source srcset="./img/slider-1/slide1tab.jpg 1x, ./img/slider-1/slide1tab@2x.jpg 2x" media="(max-width: 1199px)" />
+						<source srcset="./img/slider-1/slide1desk.jpg 1x, ./img/slider-1/slide1desk@2x.jpg 2x" media="(min-width: 1200px)" />
+						<img src="./img/slider-1/slide1mob.jpg" alt="barber" />
+					</picture>
+				</div>
+
+				<div class="item">
+					<picture>
+						<source srcset="./img/slider-1/slide2mob.jpg 1x, ./img/slider-1/slide2mob@2x.jpg 2x" media="(max-width: 767px)" />
+						<source srcset="./img/slider-1/slide2tab.jpg 1x, ./img/slider-1/slide2tab@2x.jpg 2x" media="(max-width: 1199px)" />
+						<source srcset="./img/slider-1/slide2desk.jpg 1x, ./img/slider-1/slide2desk@2x.jpg 2x" media="(min-width: 1200px)" />
+						<img src="./img/slider-1/slide2mob.jpg" alt="barber" />
+					</picture>
+				</div>
+				<div class="item">
+					<picture>
+						<source srcset="./img/slider-1/slide3mob.jpg 1x, ./img/slider-1/slide3mob@2x.jpg 2x" media="(max-width: 767px)" />
+						<source srcset="./img/slider-1/slide3tab.jpg 1x, ./img/slider-1/slide3tab@2x.jpg 2x" media="(max-width: 1199px)" />
+						<source srcset="./img/slider-1/slide3desk.jpg 1x, ./img/slider-1/slide3desk@2x.jpg 2x" media="(min-width: 1200px)" />
+						<img src="./img/slider-1/slide3mob.jpg" alt="barber" />
+					</picture>
+				</div>
+				<!-- </div> -->
+				<!-- <div class="swiper-pagination"></div>
+					<div class="button-prev">Back</div>
+					<div class="button-next">Forward</div> -->
+				<!-- Кнопки-стрелочки -->
+				<a class="previous" onclick="previousSlide()">&#10094;</a>
+				<a class="next" onclick="nextSlide()">&#10095;</a>
+				<!-- <div class="hero__content">
+							<p class="pre-title pre-title--grey">A hair salon for men in Kyiv</p>
+							<h1 class="hero__title">BarberShop</h1>
+							<p class="hero__after-title">We are experts in trendy men’s haircuts. We work quickly, carefully and with style.</p>
+						</div> -->
+				<!-- </div> -->
+			</div>
+		</section>
+		<script src="./js/slider-1.js"></script>
+		<script>
+			new Sim();
+		</script>
+	</body>
+</html>
